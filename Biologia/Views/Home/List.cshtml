@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Biologia.Controllers.Insectos>
+
+@{
+    ViewData["Title"] = "Registros";
+}
+
+<h2>Registros</h2>
+
+<p>
+    <a asp-action="Create">Nuevo Ejemplar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.usuario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                 <th>
+                    @Html.DisplayNameFor(model => model.orden)
+                </th>
+               <th>
+                    @Html.DisplayNameFor(model => model.Taxa)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Morfoespecie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Abundancia)
+                </th>
+               
+                <th>
+                    @Html.DisplayNameFor(model => model.TipoVegetacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MetodoColecta)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sustrato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Localidad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fecha)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Longitud)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Altitud)
+                </th>
+                
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.orden)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Taxa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Morfoespecie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Abundancia)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoVegetacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetodoColecta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sustrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longitud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Altitud)
+            </td>
+            
+            <td>
+                @Html.ActionLink("Actualizar", "Update", new { id = item.Id }) |
+                @Html.ActionLink("Ver", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

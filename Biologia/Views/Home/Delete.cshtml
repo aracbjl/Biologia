@@ -1,0 +1,134 @@
+﻿@model Biologia.Controllers.Insectos
+
+@{
+    ViewData["Title"] = "Bajas";
+}
+
+<h2>Eliminar Registros</h2>
+
+<h3>¿Seguro quiere eliminar el registro?</h3>
+<div>
+    <h4>Insectos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.usuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.usuario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.reino)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.reino)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phyllum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phyllum)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.clase)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.clase)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.orden)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.orden)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.familia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.familia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Taxa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Taxa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Morfoespecie)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Morfoespecie)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Abundancia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Abundancia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumFrasco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumFrasco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoVegetacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoVegetacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MetodoColecta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MetodoColecta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sustrato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sustrato)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Localidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Localidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitud)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Longitud)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Altitud)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Altitud)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.informacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.informacion)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Eliminar" class="btn btn-success" /> |
+        <a asp-action="Index" class="btn btn-default">Regresar</a>
+    </form>
+</div>
